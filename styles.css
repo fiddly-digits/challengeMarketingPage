@@ -28,10 +28,14 @@ body {
     color: black;
     width: 100%;
     text-align: center;
+    position: fixed;
 }
 
 .header .main-img {
     background-color: blue;
+    background-image: url(https://picsum.photos/1000/400?grayscale);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 400px;
     display: flex;
@@ -42,7 +46,7 @@ body {
 
 .header .main-img p {
     padding: 0 30%;
-    color: gray;
+    color: wheat;
 }
 
 .header .tboxes {
@@ -82,8 +86,12 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: 400px;
+    height: 300px;
 
+}
+
+.ideas-life h1 {
+    justify-content: right;
 }
 
 .ideas-life div {
@@ -92,7 +100,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 25%;
-    max-height: 200px;
+    /* max-height: 200px; */
+    text-overflow: clip;
 }
 
 .ideas-life div:nth-child(1) {
@@ -100,6 +109,10 @@ body {
 }
 .ideas-life div:nth-child(2) {
     flex: 1 1 50%;
+    height: 400px;
+    overflow: hidden;
+    line-clamp: 3;
+    /* padding: .5rem; */
 }
 
 .section-3 {
@@ -116,11 +129,11 @@ body {
         "img-1 img-2 text-big"
         "img-1 img-2 text-big"
         "text-small img-3 text-big";
-    gap: .5rem;
+    gap: 8px;
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: 800px;
+    height: 700px;
     width: 800px;
 }
 
@@ -134,7 +147,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 300px;
     height: 100%;
     background-color: red;
     grid-area: text-big;
@@ -153,3 +166,37 @@ body {
 .galery-1 .img-3 {
     grid-area: img-3;
 }
+
+.section-4 {
+    display: flex;
+    background-color: red;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.section-4 .flexbox {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 800px;
+
+}
+
+.section-4 .flexbox .text-boxes {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex: 1 1 50%
+}
+
+.section-4 img {
+    flex: 1 1 50%;
+}
+
