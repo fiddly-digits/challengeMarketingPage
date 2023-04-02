@@ -200,3 +200,108 @@ body {
     flex: 1 1 50%;
 }
 
+.section-5{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-5 .galery-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "img-1 img-2 img-3"
+        "img-4 img-5 img-6"
+        "img-7 img-8 img-9"
+        "info-content img-10 half-lines";
+    gap: 8px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-5 .galery-2 .img-1 {
+    grid-area: img-1;
+}
+
+.section-5 .galery-2 .img-2 {
+    grid-area: img-2;
+}
+
+.section-5 .galery-2 .img-3 {
+    grid-area: img-3;
+}
+
+.section-5 .galery-2 .img-4 {
+    grid-area: img-4;
+}
+
+.section-5 .galery-2 .img-5 {
+    grid-area: img-5;
+}
+
+.section-5 .galery-2 .img-6 {
+    grid-area: img-6;
+}
+
+.section-5 .galery-2 .img-7 {
+    grid-area: img-7;
+}
+
+.section-5 .galery-2 .img-8 {
+    grid-area: img-8;
+}
+
+.section-5 .galery-2 .img-9 {
+    grid-area: img-9;
+}
+
+.section-5 .galery-2 .info-content {
+    grid-area: info-content;
+}
+
+.section-5 .galery-2 .img-10 {
+    grid-area: img-10;
+}
+
+.section-5 .galery-2 .half-lines {
+    grid-area: half-lines;
+    background:repeating-linear-gradient(
+        to bottom right,
+        black 0%,
+        black 50%,
+        transparent 50.1%,
+        transparent 100%
+    );
+    width: 200px;
+    height: 200px;
+}
+
+.section-5 .facts-numbers {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section-5 .facts-numbers h3 {
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+.section-5 .facts-numbers h3::before {
+    content: "| \A";
+    display: flex;
+    white-space: pre;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.section-5 .facts-numbers div {
+    flex: 1 1 25% ; 
+}
