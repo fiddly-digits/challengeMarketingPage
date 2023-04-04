@@ -223,7 +223,7 @@ body {
 .section-4 {
     align-content: center;
     align-items: center;
-    background-color: red;
+    background-color: rgb(210, 19, 40);
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
@@ -268,7 +268,7 @@ body {
 .section-4 .s4-container .s4-container-son div:nth-child(1) {
     align-content: center;
     align-items: center;
-    color: red;
+    color: rgb(210, 19, 40);
     display: flex;
     font-size: 30px;
     height: 100px;
@@ -439,7 +439,7 @@ body {
     text-transform: uppercase;
 }
 .section-6 div i {
-    color: red;
+    color: rgb(210, 19, 40);
     font-size: 50px;
 }
 
